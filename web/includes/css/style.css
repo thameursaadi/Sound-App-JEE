@@ -1,0 +1,105 @@
+/* 
+    Created on : 05-Aug-2015, 18:24:29
+    Author     : Michal Goly
+*/
+
+.navbar {
+   margin-bottom: 0;
+}
+
+footer {
+   background-color: #444444;
+   color: #f9f9f9;
+}
+
+footer a {
+   color: #f9f9f9;
+}
+
+footer p a {
+   text-decoration: underline;
+}
+
+/* Sticky footer code */
+html {
+   position: relative;
+   min-height: 100%;
+}
+
+body {
+   margin-bottom: 165px;
+}
+
+footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   /* Footer fixed height */
+   height: 165px;
+}
+/* End of sticky footer code */
+
+@media(max-width:991px) {
+   footer {
+      height: 200px;
+   }
+   
+   body {
+      margin-bottom: 200px;
+   }
+}
+
+.push_down {
+   padding-top: 25px;
+   margin-bottom: 25px;
+}
+
+.price {
+   font-size: 2em;
+   font-style: italic;
+   color: #2196f3;
+}
+
+.larger_p {
+   font-size: 120%;
+}
+
+.centre-align {
+   text-align: center;
+}
+
+.badge {
+   background-color: white;
+}
+
+table {
+   width: auto;
+}
+
+.asterisk {
+   color: red;
+}
+
+.float-left {
+   float: left;
+}
+
+.remove-margin {
+   margin: 0;
+}
+
+.additional-padding {
+   padding: 20px;
+}
+
+.margin-bottom {
+   margin-bottom: 25px;
+}
+
+.fa-check {
+   color: green;
+}
+
+.fa-times {
+   color: red;
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-name>javaMailProperties</param-name>
+        <param-value>/WEB-INF/mail.properties</param-value>
+    </context-param>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error_404.jsp</location>
+    </error-page>
+    <listener>
+        <listener-class>util.MusicStoreContextListener</listener-class>
+    </listener>
+    <!-- You can restrict access to admin pages by uncommenting the code below-->
+    <!--<security-role>
+      <description>administrator of the website</description>
+      <role-name>administrator</role-name>
+   </security-role>
+   <security-constraint>
+      <web-resource-collection>
+         <web-resource-name>Admin Login</web-resource-name>
+         <url-pattern>/admin_panel/*</url-pattern>
+         <url-pattern>/admin/*</url-pattern>
+      </web-resource-collection>
+      <auth-constraint>
+         <role-name>administrator</role-name>
+      </auth-constraint>
+   </security-constraint>
+   
+   <login-config>
+      <auth-method>BASIC</auth-method>
+      <realm-name>Admin Login</realm-name>
+   </login-config> -->
+    <!-- Use cookies (not URL encoding) for session tracking -->
+    <session-config>
+        <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
+</web-app>
